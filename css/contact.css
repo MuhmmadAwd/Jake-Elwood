@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Montserrat;
+}
+
+:root {
+    --primary-clr: #404040;
+    --accent-clr: #FFE600;
+    --black-clr: #000;
+    --white-clr: #fff;
+    --gray-clr: #EBEBEB;
+}
+
+.secondary-text {
+    order: 2;
+}
+
+/* ==================
+    form
+===================== */
+.contact-form {
+    display: grid;
+    padding-top: 2em;
+    grid-template-columns: repeat(4, auto);
+}
+
+label {
+    font-weight: 700;
+}
+
+input,
+textarea {
+    margin-bottom: .75em;
+    padding: .4em;
+    font-family: inherit;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+
+
+@media (min-width: 700px) {
+    .contact-form {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-flow: dense;
+        column-gap: 1em;
+        padding-right: 1.5em;
+    }
+
+    .fname-label,
+    .fname-input {
+        grid-column: 1;
+    }
+
+    .lname-label,
+    .lname-input {
+        grid-column: 2;
+    }
+
+    .message-label,
+    .message-textarea {
+        grid-column: span 2;
+    }
+
+    .contact-form .btn {
+        margin-left: auto;
+        grid-column: 2;
+
+    }
+
+}
