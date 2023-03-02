@@ -12,6 +12,7 @@
   </h3>
 </div>
 
+![screenshot](https://github.com/MuhmmadAwd/upload-gif/blob/main/jake3elwood.gif)
 <!-- TABLE OF CONTENTS -->
 
 ## Table of Contents
@@ -25,8 +26,6 @@
 <!-- OVERVIEW -->
 
 ## Overview
-
-![screenshot](https://github.com/MuhmmadAwd/upload-gif/blob/main/jake3elwood.gif)
 
 <!-- Introduce your projects by taking a screenshot or a gif. Try to tell visitors a
 story about your project by answering: -->
