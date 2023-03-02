@@ -1,0 +1,180 @@
+:root {
+    --primary-clr: #404040;
+    --accent-clr: #FFE600;
+    --black-clr: #000;
+    --white-clr: #fff;
+    --gray-clr: #EBEBEB;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Montserrat;
+}
+
+/* ==================
+    Typography
+===================== */
+
+.main-grid {
+    display: grid;
+    grid-template-columns: minmax(1.5em, 1fr) minmax(auto, 560px) minmax(1.5em, 1fr);
+}
+
+/* ==================
+    hero area
+===================== */
+.hero {
+    background: url(../img/hero-bg.jpg) bottom;
+    background-size: cover;
+    color: var(--white-clr);
+    padding: 5em 0;
+}
+
+.col {
+    grid-column: 2;
+}
+
+.hero>* {
+    grid-column: 2;
+    max-width: 290px;
+}
+
+.accent-color {
+    color: var(--accent-clr);
+}
+
+.btn {
+    padding: .5em 1.75em;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.btn-primary {
+    color: var(--black-clr);
+    background-color: var(--accent-clr);
+    justify-self: start;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+@media (min-width:700px) {
+    .hero {
+        grid-template-columns: minmax(1.5em, 0.5fr) minmax(auto, 560px) minmax(1.5em, 2.5fr);
+    }
+
+    .hero {
+        background-position: left;
+    }
+
+    .hero>* {
+        max-width: 100%
+    }
+
+
+}
+
+/* ==================
+    info area
+===================== */
+
+.info {
+    text-align: center;
+    padding: 2em 0;
+}
+
+.info-body {
+    max-width: 360px;
+    margin: auto;
+    color: var(--primary-clr);
+}
+
+@media (min-width:700px) {
+
+    .info,
+    .footer {
+        grid-template-columns: minmax(1em, 1fr) repeat(3, minmax(150px, 320px)) minmax(1em, 1fr);
+    }
+
+    .info {
+        column-gap: 2em;
+
+    }
+
+    .col {
+        grid-column: span 1;
+    }
+
+    .col:first-child {
+        grid-column: 2 / span 1;
+    }
+}
+
+/* ==================
+    footer area
+===================== */
+
+
+.footer {
+    background: var(--gray-clr);
+    padding: 2.5em 0;
+    text-align: center;
+    grid-template-areas:
+        ". icon ."
+        ". main .";
+}
+
+.footer-main {
+    grid-area: main;
+}
+
+.footer-logo,
+.footer-text,
+.footer-fineprint {
+    opacity: .75;
+}
+
+.footer-fineprint {
+    font-size: .75rem;
+    padding-top: 2em;
+}
+
+.social-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2em;
+    display: flex;
+    justify-content: center;
+    grid-area: icon;
+}
+
+.social-link {
+    color: var(--black-clr);
+    font-size: 1.75rem;
+    margin: 0 .5em;
+}
+
+.social-link:hover,
+.section-title:hover {
+    color: var(--accent-clr);
+    cursor: pointer;
+}
+
+@media (min-width:700px) {
+    .footer {
+        grid-template-areas:
+        ". main main icon ."
+    }
+
+    .footer-main {
+        text-align: left;
+    }
+
+    .social-list {
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
