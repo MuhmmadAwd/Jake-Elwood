@@ -1,8 +1,9 @@
 <h1 align="center">Jake & Elwood</h1>
 
-<div align="center">
-  challenge from  <a href="http://scrimba.com" target="_blank">scrimba.com</a>.
-</div>
+<h4 align="center">
+    a clone of a marketing company's website, created using CSS Grid for the layout, The website is responsive and
+    includes animations and interactive elements, The project was created for training and practice.
+</h4>
 
 <div align="center">
   <h3>
@@ -44,15 +45,18 @@ story about your project by answering: -->
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
-- [css grid]()
-- [html]()
-- [my brain 😉]()
+- css grid
+- html
+- my brain 😉
 
 ## Features
 
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
-This challenge. was to build responsive website from 3 pages
+- Responsive layout that adjusts to different screen sizes
+- Use of CSS Grid for layout and design
+- Animations and interactive elements to engage users
+- Clone of an existing marketing company website
 
 ## Acknowledgements
 
@@ -61,7 +65,10 @@ This challenge. was to build responsive website from 3 pages
 - [7 Practical Uses for the ::before and ::after Pseudo-Elements in CSS](https://css-tricks.com/7-practical-uses-for-the-before-and-after-pseudo-elements-in-css/)
 - [What different between grid-template-area and grid-column](https://css-tricks.com/almanac/properties/g/grid-area/)
 
-## Contact
+##Fork
+You can also clone the repo and modify the code to create your own version of the website.
 
+## Contact
+<h4> If you have any questions or feedback, please feel free to contact me at [muhmmad.awd@gmail.com]. </h4>
 - linkedin [@muhmmadawd](https://www.linkedin.com/in/muhmmadawd/)
 - GitHub [@muhmmadawd](https://github.com/MuhmmadAwd)
